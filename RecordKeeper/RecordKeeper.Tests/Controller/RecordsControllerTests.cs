@@ -57,7 +57,7 @@ namespace RecordKeeper.Tests.Controller
 
 
             //Act
-            var result = _controller.GetByGender();
+            var result = _controller.GetByDOB();
 
             //Assert
             var reponse = Assert.IsType<OkObjectResult>(result);
@@ -73,7 +73,7 @@ namespace RecordKeeper.Tests.Controller
 
 
             //Act
-            var result = _controller.GetByGender();
+            var result = _controller.GetByName();
 
             //Assert
             var reponse = Assert.IsType<OkObjectResult>(result);
