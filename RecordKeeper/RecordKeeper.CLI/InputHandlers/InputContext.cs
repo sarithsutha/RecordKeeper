@@ -39,14 +39,22 @@ namespace RecordKeeper.CLI.InputHandlers
         }
         public bool HandleInputKey(ConsoleKey key)
         {
+            Console.Clear();
             if (_inputHandlers.ContainsKey(key))
             {
-                return _inputHandlers[key].Handle();
+                try
+                {
+                    return _inputHandlers[key].Handle();
+                }
+                catch
+                {
+                    return true;
+                }
             }
             else
             {
                 Console.WriteLine("Invalid option");
-                return false;
+                return true;
             }
         }
     }

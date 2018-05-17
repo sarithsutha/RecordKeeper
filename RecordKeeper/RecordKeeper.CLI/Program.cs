@@ -12,12 +12,12 @@ namespace RecordKeeper.CLI
             Service.IRecordsService svc = new Service.RecordsService(repo);
             //END
             Console.WriteLine("Starting Record Keeper's interative command line session...");
-            bool exit = false;
-            while (!exit)
+            bool canContinue = true;
+            while (canContinue)
             {
                 new InputContext(svc).PrintOptions();
                 var input = Console.ReadKey();
-                exit = new InputContext(svc).HandleInputKey(input.Key);
+                canContinue = new InputContext(svc).HandleInputKey(input.Key);
             }
         }
     }

@@ -6,19 +6,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="CommaSeperatedInput.txt" />
-    <None Remove="PipeSeperatedInput.txt" />
-    <None Remove="SpaceSeperatedInput.txt" />
+    <None Remove="InputFile1.txt" />
+    <None Remove="InputFile2.txt" />
+    <None Remove="InputFile3.txt" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="CommaSeperatedInput.txt">
+    <Content Include="InputFile1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="PipeSeperatedInput.txt">
+    <Content Include="InputFile2.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="SpaceSeperatedInput.txt">
+    <Content Include="InputFile3.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

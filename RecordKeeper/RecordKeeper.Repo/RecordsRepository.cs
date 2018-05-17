@@ -1,5 +1,6 @@
 ﻿using RecordKeeper.Core;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace RecordKeeper.Repo
 {
@@ -15,6 +16,11 @@ namespace RecordKeeper.Repo
         public void AddRecord(Person person)
         {
             People.Add(person);
+        }
+
+        public List<Person> GetAll()
+        {
+            return People;
         }
     }
 }

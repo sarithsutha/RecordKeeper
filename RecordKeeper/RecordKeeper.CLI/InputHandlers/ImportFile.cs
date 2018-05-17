@@ -16,17 +16,20 @@ namespace RecordKeeper.CLI.InputHandlers
         public string Message => "Import a file";
         public bool Handle()
         {
+            Console.WriteLine();
             Console.WriteLine("Please enter the file path and hit enter");
             string fileName = Console.ReadLine();
             if (File.Exists(fileName))
             {
                 _recordsService.AddFromFile(fileName);
+                Console.WriteLine($"file '{fileName}' has been successfully imported.");
+                Console.WriteLine();
             }
             else
             {
                 Console.WriteLine("***File not found***");
             }
-            return false;
+            return true;
         }
     }
 }

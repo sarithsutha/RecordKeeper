@@ -8,7 +8,7 @@ namespace RecordKeeper.CLI.InputHandlers
         public string Message => "Exit";
         public bool Handle()
         {
-            return true;
+            return false;
         }
     }
 }

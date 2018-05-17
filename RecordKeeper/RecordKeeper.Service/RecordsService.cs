@@ -35,5 +35,10 @@ namespace RecordKeeper.Service
             }
             return true;
         }
+
+        public List<Person> GetAll()
+        {
+            return _recordsRepository.GetAll();
+        }
     }
 }
