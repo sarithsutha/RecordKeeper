@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordKeeper.Service", "Rec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordKeeper.Repo", "RecordKeeper.Repo\RecordKeeper.Repo.csproj", "{7C183795-665F-4103-91FD-67728E17DB8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordKeeper.Data", "RecordKeeper.Data\RecordKeeper.Data.csproj", "{072D269D-F4FC-4E51-8BB7-15A1CAB18D14}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordKeeper.Core", "RecordKeeper.Data\RecordKeeper.Core.csproj", "{072D269D-F4FC-4E51-8BB7-15A1CAB18D14}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordKeeper.Utility", "RecordKeeper.Utility\RecordKeeper.Utility.csproj", "{D6B6DA40-74E6-4775-A649-2E8BD1FDBA42}"
 EndProject

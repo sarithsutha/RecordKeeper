@@ -7,10 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="testrecords.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Utility\testrecords.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
     <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RecordKeeper.Utility\RecordKeeper.Utility.csproj" />
   </ItemGroup>
 
 </Project>
