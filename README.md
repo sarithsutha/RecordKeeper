@@ -1,3 +1,6 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/a5qyif75sc3gxwoo?svg=true)](https://ci.appveyor.com/project/sarithsutha/recordkeeper)
+[![codecov](https://codecov.io/gh/sarithsutha/RecordKeeper/branch/master/graph/badge.svg)](https://codecov.io/gh/sarithsutha/RecordKeeper)
+
 # Record Keeper
 A simple record keeping application with a Web API and a CLI
 

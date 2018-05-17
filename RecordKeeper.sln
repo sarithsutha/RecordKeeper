@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordKeeper.API", "RecordKeeper.API\RecordKeeper.API.csproj", "{F7C31700-669A-4052-97E8-4C562AD115C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecordKeeper.API", "RecordKeeper\RecordKeeper.API\RecordKeeper.API.csproj", "{F7C31700-669A-4052-97E8-4C562AD115C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordKeeper.CLI", "RecordKeeper.CLI\RecordKeeper.CLI.csproj", "{53107490-00C3-4C12-9F87-BD04AB61654D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecordKeeper.CLI", "RecordKeeper\RecordKeeper.CLI\RecordKeeper.CLI.csproj", "{53107490-00C3-4C12-9F87-BD04AB61654D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordKeeper.Service", "RecordKeeper.Service\RecordKeeper.Service.csproj", "{D6A2DF01-AAD6-4E0C-8C40-E5A65B85E361}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecordKeeper.Service", "RecordKeeper\RecordKeeper.Service\RecordKeeper.Service.csproj", "{D6A2DF01-AAD6-4E0C-8C40-E5A65B85E361}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordKeeper.Repo", "RecordKeeper.Repo\RecordKeeper.Repo.csproj", "{7C183795-665F-4103-91FD-67728E17DB8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecordKeeper.Repo", "RecordKeeper\RecordKeeper.Repo\RecordKeeper.Repo.csproj", "{7C183795-665F-4103-91FD-67728E17DB8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordKeeper.Core", "RecordKeeper.Data\RecordKeeper.Core.csproj", "{072D269D-F4FC-4E51-8BB7-15A1CAB18D14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecordKeeper.Core", "RecordKeeper\RecordKeeper.Data\RecordKeeper.Core.csproj", "{072D269D-F4FC-4E51-8BB7-15A1CAB18D14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordKeeper.Utility", "RecordKeeper.Utility\RecordKeeper.Utility.csproj", "{D6B6DA40-74E6-4775-A649-2E8BD1FDBA42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecordKeeper.Utility", "RecordKeeper\RecordKeeper.Utility\RecordKeeper.Utility.csproj", "{D6B6DA40-74E6-4775-A649-2E8BD1FDBA42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordKeeper.Tests", "RecordKeeper.Tests\RecordKeeper.Tests.csproj", "{0FC96E94-D5B8-4FAC-8C5B-3F747173A6D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecordKeeper.Tests", "RecordKeeper\RecordKeeper.Tests\RecordKeeper.Tests.csproj", "{0FC96E94-D5B8-4FAC-8C5B-3F747173A6D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
