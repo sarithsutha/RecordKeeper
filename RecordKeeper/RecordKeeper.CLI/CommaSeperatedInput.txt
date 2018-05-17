@@ -1,0 +1,7 @@
+﻿Einstein,Albert,Male,Violet,03/14/1879
+Turing,Alan,Male,Indigo,06/23/1912
+Knuth,Donald,Male,Blue,01/10/1938
+Ritchie,Dennis,Male,Green,09/09/1941
+Thompson,Ken,Male,Yellow,02/4/1943
+Liskov,Barbara,Female,Orange,11/7/1939
+Goldwasser,Shafi,Female,Red,11/14/1959

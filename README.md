@@ -1,6 +1,12 @@
 # Record Keeper
 A simple record keeping application with a Web API and a CLI
 
+## Assumptions made to keep the solution simple: 
+- None of the delimiters (commas, pipes and spaces) appear anywhere in the data values themselves.
+- The delimited files are not too large.
+- The file are of valid format, for simplicity file format is not validated.
+- No authentication needed for the API.
+
 ## Solution Structure
 To make the application testable and maintainable, the solution was structured using Onion Architecture.
 And the concerns are clearly separated into layers.

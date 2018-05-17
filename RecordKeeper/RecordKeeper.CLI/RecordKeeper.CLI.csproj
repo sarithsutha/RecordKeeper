@@ -5,4 +5,29 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="CommaSeperatedInput.txt" />
+    <None Remove="PipeSeperatedInput.txt" />
+    <None Remove="SpaceSeperatedInput.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="CommaSeperatedInput.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PipeSeperatedInput.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SpaceSeperatedInput.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RecordKeeper.Data\RecordKeeper.Core.csproj" />
+    <ProjectReference Include="..\RecordKeeper.Repo\RecordKeeper.Repo.csproj" />
+    <ProjectReference Include="..\RecordKeeper.Service\RecordKeeper.Service.csproj" />
+    <ProjectReference Include="..\RecordKeeper.Utility\RecordKeeper.Utility.csproj" />
+  </ItemGroup>
+
 </Project>
