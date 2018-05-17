@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "a7ada054-3f16-43ea-ab63-6e888e3cc1e9",
+		"name": "Record Keeper",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post a single record",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"Lovelace|Ada|Female|Pink|12/10/1815\""
+				},
+				"url": {
+					"raw": "http://localhost:57012/api/records",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57012",
+					"path": [
+						"api",
+						"records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By Gender",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:57012/api/records/gender",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57012",
+					"path": [
+						"api",
+						"records",
+						"gender"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By Birthdate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:57012/api/records/birthdate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57012",
+					"path": [
+						"api",
+						"records",
+						"birthdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:57012/api/records/name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57012",
+					"path": [
+						"api",
+						"records",
+						"name"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

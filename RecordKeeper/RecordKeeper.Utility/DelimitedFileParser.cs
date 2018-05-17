@@ -12,6 +12,15 @@ namespace RecordKeeper.Utility
     public class DelimitedFileParser
     {
         private List<string[]> fileContent;
+        public DelimitedFileParser(string data, bool isContent)
+        {
+            if (string.IsNullOrWhiteSpace(data))
+                throw new ArgumentNullException("data");
+
+            fileContent = new List<string[]>();
+            string delimiter = GetDelimiter(data);
+            fileContent.Add(data.Split(delimiter));
+        }
         public DelimitedFileParser(string filename, string delimiter = null)
         {
             if (string.IsNullOrWhiteSpace(filename))

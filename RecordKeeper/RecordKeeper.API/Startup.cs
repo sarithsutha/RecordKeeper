@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using RecordKeeper.Repo;
+using RecordKeeper.Service;
 
 namespace RecordKeeper.API
 {
@@ -18,6 +20,8 @@ namespace RecordKeeper.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddTransient<IRecordsService, RecordsService>();
+            services.AddTransient<IRecordsRepository, RecordsRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

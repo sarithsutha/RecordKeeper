@@ -32,5 +32,19 @@ namespace RecordKeeper.Tests.Service
             _service.AddFromFile(@"Utility\testrecords.csv");
             _repoMock.Verify(x => x.AddRecord(It.Is<Person>(p => p.FirstName.StartsWith("Albert"))), Times.Once);
         }
+
+        [Fact]
+        public void AddFromStringTestNullstring()
+        {
+            Assert.Throws<ArgumentNullException>(() => { _service.AddFromString(null); });
+            _repoMock.Verify(x => x.AddRecord(It.IsAny<Person>()), Times.Never);
+        }
+
+        [Fact]
+        public void AddFromStringTestSampleData()
+        {
+            _service.AddFromString(@"Einstein,Albert,Male,Violet,03/14/1879");
+            _repoMock.Verify(x => x.AddRecord(It.Is<Person>(p => p.FirstName.StartsWith("Albert"))), Times.Once);
+        }
     }
 }

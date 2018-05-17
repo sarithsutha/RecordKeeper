@@ -16,4 +16,10 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RecordKeeper.Data\RecordKeeper.Core.csproj" />
+    <ProjectReference Include="..\RecordKeeper.Repo\RecordKeeper.Repo.csproj" />
+    <ProjectReference Include="..\RecordKeeper.Service\RecordKeeper.Service.csproj" />
+  </ItemGroup>
+
 </Project>
