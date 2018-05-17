@@ -23,3 +23,6 @@ And the concerns are clearly separated into layers.
 |RecordKeeper.Tests | The test project for unit tests.|
 |RecordKeeper.Utility | This layer is home for the utility and the helper classes used by any of the layers.|
 
+## Testing
+For testing the APIs, if Postman is being used the request collection is made available in this repository.
+Look for the file "postman_collection.json" in the root of the repository.
