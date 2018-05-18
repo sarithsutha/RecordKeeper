@@ -16,8 +16,9 @@ namespace RecordKeeper.Tests.Controller
         public RecordsControllerTests()
         {
             _serviceMock = new Mock<IRecordsService>();
-            _serviceMock.Setup(x => x.AddFromFile(It.IsAny<string>())).Returns(true);
-            _serviceMock.Setup(x => x.AddFromString(It.IsAny<string>())).Returns(true);
+            _serviceMock.Setup(x => x.AddFromFile(It.IsNotNull<string>())).Returns(true);
+            _serviceMock.Setup(x => x.AddFromString(It.IsNotNull<string>())).Returns(true);
+            _serviceMock.Setup(x => x.AddFromString(It.Is<string>(data => string.IsNullOrWhiteSpace(data)))).Throws<ArgumentNullException>();
 
             var testdata = new List<Person>();
             testdata.Add(new Person() { FirstName = "Albert", LastName = "Einstein", Gender = "Male", FavoriteColor = "Violet", DateOfBirth = DateTime.Parse("03/14/1879") });
@@ -32,6 +33,12 @@ namespace RecordKeeper.Tests.Controller
         {
             _controller.Post("Einstein,Albert,Male,Violet,03/14/1879");
             _serviceMock.Verify(x => x.AddFromString(It.Is<string>(p => p.StartsWith("Einstein"))), Times.Once);
+        }
+
+        [Fact]
+        public void PostTestNullData()
+        {
+            Assert.IsType<BadRequestResult>(_controller.Post(null));
         }
 
         [Fact]
